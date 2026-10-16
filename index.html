@@ -2,126 +2,209 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Two Thumbs: game night for two on iPhone</title>
-<meta name="description" content="15 games for two people on one iPhone: couples, best friends, roommates. The phone runs the game. Works offline, no account, no ads. Free beta on TestFlight.">
+<meta name="description" content="Game night for two on one iPhone: the phone runs 15 games, keeps score and ends each game with a recap. It works offline with no account and no ads, and you can play a round right here.">
 <link rel="canonical" href="https://playtwothumbs.com/">
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0F3B2E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://playtwothumbs.com/">
 <meta property="og:title" content="Two Thumbs: game night for two on iPhone">
-<meta property="og:description" content="15 games for two people on one iPhone or two. Works offline, no account. Free beta on TestFlight.">
-<meta property="og:image" content="https://playtwothumbs.com/assets/mascot.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="Put both thumbs down and play a round right on the page. The app has 15 games for two, on one iPhone or two, and works offline.">
+<meta property="og:image" content="https://playtwothumbs.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://playtwothumbs.com/assets/og.png">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" href="assets/BricolageGrotesque-800.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="preload" href="assets/bricolage-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/bricolage-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/home.css">
+<script>try{var t=localStorage.getItem("tt-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Two Thumbs","operatingSystem":"iOS 17 or later","applicationCategory":"GameApplication","description":"15 games for two people on one iPhone or two. Works offline, no account.","url":"https://playtwothumbs.com/","publisher":{"@type":"Organization","name":"TrueStandard Labs LLC"}}</script>
+<script src="assets/home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="wrap">
-<header class="top">
-  <a class="wordmark" href="./"><img src="assets/icon-120.png" alt="" width="36" height="36">two thumbs</a>
-  <nav aria-label="Pages"><a class="nav-jump" href="#games">Games</a><a class="nav-jump" href="#pass">Pass</a><a href="support.html">Support</a></nav>
+
+<header class="bar">
+  <a class="wordmark" href="./"><img src="assets/icon-120.png" alt="" width="40" height="40">two thumbs</a>
+  <nav class="bar-nav" aria-label="Sections">
+    <a href="#island">Games</a>
+    <a href="#pass">Pass</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <button class="lamp" type="button" data-lamp aria-pressed="false">
+    <span class="lamp-cord" aria-hidden="true"></span>
+    <svg class="lamp-shade" viewBox="0 0 48 40" aria-hidden="true"><path d="M8 30 Q24 2 40 30 Z" /><circle class="lamp-bulb" cx="24" cy="32" r="6" /></svg>
+    <span class="sr-only" data-lamp-label>Switch to night</span>
+    <span class="lamp-tip" aria-hidden="true">Lights</span>
+  </button>
+  <a class="btn btn-small btn-pink bar-cta" href="https://testflight.apple.com/join/aw4fVYgR">Get the beta</a>
 </header>
+
 <main id="main">
-<section class="hero">
-  <picture>
-    <source srcset="assets/mascot.webp" type="image/webp">
-    <img src="assets/mascot.png" width="520" height="436" alt="Thumbs, the Two Thumbs mascot: a round mango buddy giving two thumbs up">
-  </picture>
-  <p class="eyebrow">Game night for two · couples, best friends, roommates</p>
-  <h1>Game night in seconds, anywhere.</h1>
-  <p class="lead">Put one iPhone between you and it runs the game. It explains the rules, keeps the secrets and keeps score, so you two play together instead of scrolling apart.</p>
-  <a class="button" href="https://testflight.apple.com/join/aw4fVYgR">Join the free beta</a>
-  <p class="facts">Free beta on TestFlight · works offline ✈︎ · no account, no ads · iPhone with iOS 17 or later</p>
-</section>
 
-<section class="enemy" aria-labelledby="enemy-title">
-  <h2 id="enemy-title">Two people, one couch, two feeds.</h2>
-  <p>Put the feeds down for a round of Mixed games. The phone asks how many keys a piano has. You each drag a slider to guess, and the closer guess takes the point. The answer is 88. After 16 rounds, about 20 minutes, the final score shows who won, and the game ends.</p>
-</section>
+<section class="hero" aria-labelledby="hero-title">
+  <p class="eyebrow">Game night for two on iPhone</p>
+  <h1 id="hero-title" class="hero-title">
+    <span class="hero-line"><span class="w" style="--i:0">Two</span> <span class="w" style="--i:1">thumbs.</span></span>
+    <span class="hero-line"><span class="w" style="--i:2">Game</span> <span class="w hero-on" style="--i:3">on.</span><img class="hero-mascot" src="assets/mascot.webp" width="260" height="218" alt="Thumbs, the Two Thumbs mascot, giving two thumbs up"></span>
+  </h1>
 
-<section class="pairs" aria-labelledby="pairs-title">
-  <h2 id="pairs-title" class="section-title">Who's playing tonight?</h2>
-  <div class="pair-grid">
-    <article class="pair">
-      <span class="sticker sticker-pink">Date night</span>
-      <p class="pair-lead">You and your person, after dinner or already in bed.</p>
-      <ul class="pair-games">
-        <li><img src="assets/games/bottle.webp" alt="" width="56" height="56" loading="lazy"><span><b>Bottle spin</b>: a bottle on the screen spins and lands on trivia or on a question like "Pizza topping for life?" One of you answers, and the other guesses what they said.</span></li>
-        <li><img src="assets/games/mixed.webp" alt="" width="56" height="56" loading="lazy"><span><b>Mixed games</b> has you guess, bet and try to pick the same answer, 16 rounds in about 20 minutes.</span></li>
-        <li><img src="assets/games/escape.webp" alt="" width="56" height="56" loading="lazy"><span><b>Escape room</b> is for the nights you want to solve something as a team.</span></li>
+  <div class="hero-grid">
+    <div class="stage" id="stage" aria-live="polite">
+      <div class="stage-pads" data-scene="pads">
+        <p class="sr-only">Press both pads to start a round of Closest guess.</p>
+        <div class="pads">
+          <button class="pad pad-pink" type="button" data-pad="0" aria-pressed="false" aria-label="Pink's pad">
+            <span class="pad-fill" aria-hidden="true"></span>
+            <img class="pad-thumb" src="assets/thumb.webp" alt="" width="307" height="360">
+            <span class="pad-who"><span class="avatar avatar-pink">🦊</span>Pink</span>
+            <kbd class="pad-key" data-key-hint>F</kbd>
+          </button>
+          <button class="pad pad-mango" type="button" data-pad="1" aria-pressed="false" aria-label="Mango's pad">
+            <span class="pad-fill" aria-hidden="true"></span>
+            <img class="pad-thumb pad-thumb-r" src="assets/thumb.webp" alt="" width="307" height="360">
+            <span class="pad-who"><span class="avatar avatar-mango">🐼</span>Mango</span>
+            <kbd class="pad-key" data-key-hint>J</kbd>
+          </button>
+        </div>
+        <span class="ghost" aria-hidden="true"></span>
+      </div>
+      <noscript><p class="stage-hint">Turn on JavaScript to play a round here.</p></noscript>
+    </div>
+
+    <div class="hero-copy">
+      <p class="lead">Put one iPhone between you and it runs the game. It explains the rules, keeps the secrets and keeps score, so you two play together instead of scrolling apart.</p>
+      <a class="btn btn-pink" href="https://testflight.apple.com/join/aw4fVYgR">Join the free beta</a>
+      <ul class="facts">
+        <li>Free beta on TestFlight</li>
+        <li>Works offline ✈︎</li>
+        <li>No account, no ads</li>
+        <li>iPhone, iOS 17 or later</li>
       </ul>
-    </article>
-    <article class="pair">
-      <span class="sticker">Best friends</span>
-      <p class="pair-lead">Road trips once the playlist runs out, rainy Sundays and the roommate on the other end of the couch.</p>
-      <ul class="pair-games">
-        <li><img src="assets/games/fourrow.webp" alt="" width="56" height="56" loading="lazy"><span><b>Seven head-to-head classics</b>, like Four in a row and Dots and boxes. First to three games wins, then the trash talk and the rematch.</span></li>
-        <li><img src="assets/games/casefile.webp" alt="" width="56" height="56" loading="lazy"><span><b>Trivia night and Case file</b>, solved as a team.</span></li>
-        <li><img src="assets/games/tictactoe.webp" alt="" width="56" height="56" loading="lazy"><span><b>Tap a name</b> to swap who's playing, so another friend can take a turn on your phone.</span></li>
-        <li><img src="assets/games/sizeup.webp" alt="" width="56" height="56" loading="lazy"><span><b>Both on iPhones?</b> Pair them once with a 4-digit code and play the classics each on your own phone, free.</span></li>
+    </div>
+  </div>
+</section>
+
+<section class="couch" aria-labelledby="couch-title">
+  <div class="couch-pin">
+    <div class="couch-text">
+      <h2 id="couch-title" class="couch-a">Two people,<br>one couch,<br>two feeds.</h2>
+      <p class="couch-b display">One phone,<br>faces up.</p>
+      <ul class="couch-chips">
+        <li class="chip chip-1">Reads the rules</li>
+        <li class="chip chip-2">Keeps the secrets</li>
+        <li class="chip chip-3">Keeps the score</li>
       </ul>
-      <p class="pair-note">The questions work for any two people, from "Pick the best road-trip snack" to "How many bones are in an adult human body?"</p>
-    </article>
+    </div>
+    <div class="couch-scene" aria-hidden="true">
+      <div class="person person-pink"><span class="avatar avatar-pink">🦊</span></div>
+      <div class="person person-mango"><span class="avatar avatar-mango">🐼</span></div>
+      <div class="phone phone-l"><div class="feed"><div class="feed-roll"></div></div></div>
+      <div class="phone phone-r"><div class="feed"><div class="feed-roll"></div></div></div>
+      <div class="phone phone-game">
+        <div class="mini">
+          <div class="mini-pills"><span class="mini-pill mini-pink">🦊 2</span><span class="mini-pill mini-mango">🐼 1</span></div>
+          <p class="mini-q">How many keys are on a standard piano?</p>
+          <p class="mini-num">88</p>
+          <span class="mini-track"></span>
+          <div class="mini-pads"><span class="mini-pad mini-pad-pink">🦊</span><span class="mini-pad mini-pad-mango">🐼</span></div>
+          <div class="mini-recap"><span class="mini-recap-av">🦊</span><b>Pink wins 2–1</b><span class="mini-recap-btn">Rematch</span></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <p class="inline-cta"><a href="https://testflight.apple.com/join/aw4fVYgR">Try it tonight: join the free beta</a></p>
 </section>
 
-<section class="shelf" id="games" aria-labelledby="games-title">
-  <h2 id="games-title" class="section-title">15 games on one phone.</h2>
-  <p class="section-lead">Every game has a picture how-to, so nobody reads a rulebook.</p>
-  <h3>Team up: solve it together</h3>
-  <ul class="tiles">
-    <li><img src="assets/games/trivia.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Trivia night</span><span class="tile-blurb">Seven levels, pub quiz to mastermind</span></li>
-    <li><img src="assets/games/escape.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Escape room</span><span class="tile-blurb">Escape every room in a world</span></li>
-    <li><img src="assets/games/casefile.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Case file</span><span class="tile-blurb">One busy scene, five questions</span></li>
-    <li><img src="assets/games/hunt.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Treasure hunt</span><span class="tile-blurb">One riddle at a time, in a picture</span></li>
-    <li><img src="assets/games/safecracker.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Safecracker</span><span class="tile-blurb">Guess the code, read the clicks</span></li>
-    <li><img src="assets/games/spotswap.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Spot the swap</span><span class="tile-blurb">The phone changes the picture</span></li>
-  </ul>
-  <h3>Head to head: first to three games wins</h3>
-  <ul class="tiles">
-    <li><img src="assets/games/tictactoe.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Tic-tac-toe</span><span class="tile-blurb">Three in a line wins</span></li>
-    <li><img src="assets/games/fourrow.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Four in a row</span><span class="tile-blurb">Drop discs, line up four</span></li>
-    <li><img src="assets/games/dots.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Dots and boxes</span><span class="tile-blurb">Close a box, go again</span></li>
-    <li><img src="assets/games/sizeup.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Size up</span><span class="tile-blurb">Big pieces swallow small ones</span></li>
-    <li><img src="assets/games/pickpoison.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Pick your poison</span><span class="tile-blurb">You pick the piece they place</span></li>
-    <li><img src="assets/games/flipwars.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Flip wars</span><span class="tile-blurb">Trap a line to flip it</span></li>
-    <li><img src="assets/games/seahunt.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Sea hunt</span><span class="tile-blurb">Find and sink the hidden fleet</span></li>
-  </ul>
-  <h3>Mix it up: a bit of everything</h3>
-  <ul class="tiles">
-    <li><img src="assets/games/mixed.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Mixed games</span><span class="tile-blurb">Guess, bet and match, 16 rounds</span></li>
-    <li><img src="assets/games/bottle.webp" alt="" width="64" height="64" loading="lazy"><span class="tile-name">Bottle spin</span><span class="tile-blurb">Spin it, answer what it lands on</span></li>
-  </ul>
-  <p class="inline-cta"><a href="https://testflight.apple.com/join/aw4fVYgR">Play all 15 in the free beta</a></p>
+<section class="island" id="island" aria-labelledby="island-title">
+  <div class="island-head">
+    <h2 id="island-title" class="display">15 games<br>on one island.</h2>
+    <div class="districts" role="group" aria-label="Show a kind of game">
+      <button type="button" class="district" data-district="all" aria-pressed="true">All 15</button>
+      <button type="button" class="district" data-district="puzzle" aria-pressed="false">Puzzles</button>
+      <button type="button" class="district" data-district="classic" aria-pressed="false">Classics</button>
+      <button type="button" class="district" data-district="party" aria-pressed="false">Party</button>
+    </div>
+  </div>
+  <div class="island-sea">
+    <div class="clouds" aria-hidden="true">
+      <svg class="cloud cloud-1" viewBox="0 0 320 150"><path d="M40 120c-28 0-36-40-8-50-6-34 36-50 58-28 10-36 64-44 84-10 22-24 70-14 74 22 34-2 48 46 16 66z"/></svg>
+      <svg class="cloud cloud-2" viewBox="0 0 320 150"><path d="M40 120c-28 0-36-40-8-50-6-34 36-50 58-28 10-36 64-44 84-10 22-24 70-14 74 22 34-2 48 46 16 66z"/></svg>
+      <svg class="cloud cloud-3" viewBox="0 0 320 150"><path d="M40 120c-28 0-36-40-8-50-6-34 36-50 58-28 10-36 64-44 84-10 22-24 70-14 74 22 34-2 48 46 16 66z"/></svg>
+      <svg class="cloud cloud-4" viewBox="0 0 320 150"><path d="M40 120c-28 0-36-40-8-50-6-34 36-50 58-28 10-36 64-44 84-10 22-24 70-14 74 22 34-2 48 46 16 66z"/></svg>
+    </div>
+    <ul class="map" id="map" aria-label="All 15 games"></ul>
+    <span class="ghost" aria-hidden="true"></span>
+  </div>
 </section>
 
-<section class="blocks" aria-label="Where and how you play">
-  <div class="block">
-    <h2>Works at 35,000 feet</h2>
-    <p>Every game runs in Airplane Mode, with no account to make and no Wi-Fi to find. Take it on a flight or to a cabin with no signal. Every level that comes with the app is on your phone from the first launch. New monthly levels download the next time you're online.</p>
-  </div>
-  <div class="block">
-    <h2>One phone or two</h2>
+<dialog class="sheet" id="game-sheet" aria-labelledby="sheet-name">
+  <form method="dialog" class="sheet-inner">
+    <span class="sheet-grab" aria-hidden="true"></span>
+    <button class="sheet-x" value="close" aria-label="Close">×</button>
+    <img class="sheet-art" alt="" width="300" height="240">
+    <p class="sheet-group"></p>
+    <h3 class="sheet-name" id="sheet-name"></h3>
+    <p class="sheet-meta"></p>
+    <p class="sheet-blurb"></p>
+    <ul class="sheet-tags"></ul>
+    <div class="sheet-nav">
+      <button type="button" class="btn btn-ghost" data-step="-1">← Back</button>
+      <button type="button" class="btn btn-palm" data-step="1">Next game →</button>
+    </div>
+  </form>
+</dialog>
+
+<section class="anywhere" aria-label="Where and how you play">
+  <article class="panel panel-air">
+    <div class="air-screen" data-air>
+      <div class="air-status"><span class="air-time">9:41</span><span class="air-icon" aria-hidden="true">✈︎</span></div>
+      <label class="switch-row">
+        <span class="switch-label"><span class="air-glyph" aria-hidden="true">✈︎</span>Airplane Mode</span>
+        <input type="checkbox" role="switch" class="switch" data-air-switch>
+      </label>
+      <div class="air-sky" aria-hidden="true"><img class="air-plane" src="assets/mascot.webp" alt="" width="64" height="54"></div>
+      <ul class="air-games" aria-hidden="true"></ul>
+      <p class="air-count" data-air-count aria-live="polite"></p>
+      <span class="ghost" aria-hidden="true"></span>
+    </div>
+    <h2 class="panel-title">Works at 35,000 feet</h2>
+    <p>Every game runs in Airplane Mode, with no account to make and no Wi-Fi to find. Every level that comes with the app is on your phone from the first launch. New monthly levels download the next time you're online.</p>
+  </article>
+
+  <article class="panel panel-pair">
+    <div class="pair-screen" data-pair="one">
+      <div class="seg" role="radiogroup" aria-label="How many phones">
+        <button type="button" role="radio" aria-checked="true" data-phones="one">One phone</button>
+        <button type="button" role="radio" aria-checked="false" data-phones="two">Two phones</button>
+      </div>
+      <div class="pair-stage" aria-hidden="true">
+        <span class="avatar avatar-pink pair-a">🦊</span>
+        <div class="pphone pphone-1"><span class="pp-code" data-code>····</span><span class="pp-pad pp-pink"></span><span class="pp-pad pp-mango"></span></div>
+        <div class="pphone pphone-2"><span class="pp-code" data-code>····</span><span class="pp-pad pp-mango"></span></div>
+        <span class="avatar avatar-mango pair-b">🐼</span>
+        <span class="paired">Paired</span>
+      </div>
+      <span class="ghost" aria-hidden="true"></span>
+    </div>
+    <h2 class="panel-title">One phone or two</h2>
     <p>Share one phone with a thumb on each pad. If you both have iPhones, pair them once with a 4-digit code, and Mixed games and all seven classics play across both over Bluetooth or Wi-Fi, with no internet.</p>
-  </div>
+  </article>
 </section>
 
 <section class="fit" aria-labelledby="fit-title">
-  <h2 id="fit-title" class="section-title">Built for exactly two.</h2>
+  <h2 id="fit-title" class="display">Built for exactly two.</h2>
   <div class="fit-grid">
     <div class="fit-col fit-yes">
       <h3>Good fit</h3>
       <ul>
-        <li>Two people in the same room, or in the same row on a plane.</li>
+        <li>Date night, after dinner or already in bed.</li>
+        <li>Best friends on a road trip once the playlist runs out.</li>
+        <li>Two people in the same row on a plane.</li>
         <li>Ten minutes before bed, or a whole evening.</li>
-        <li>Pairs who like keeping score, or solving something as a team.</li>
       </ul>
     </div>
     <div class="fit-col fit-no">
@@ -137,19 +220,29 @@
 </section>
 
 <section class="pass" id="pass" aria-labelledby="pass-title">
-  <span class="sticker">PASS</span>
-  <h2 id="pass-title">Two Thumbs Pass</h2>
-  <p>Free to play, with no daily limit: all seven classics, the question games (Mixed games and Bottle spin) and level 1 of each of the six puzzle games. The Pass opens every puzzle level after that, plus the new levels that arrive each month. Puzzle games play on one phone, so only one of you ever needs the Pass, and the games that play on two phones stay free after launch. There are no ads, free or paid.</p>
+  <span class="sticker sticker-mango">PASS</span>
+  <h2 id="pass-title" class="display">Most of it is free.</h2>
+  <div class="free-map">
+    <div class="fm-row">
+      <p class="fm-label"><span class="fm-tag fm-free">Free</span>9 games, all free, no daily limit</p>
+      <ul class="fm-icons" data-fm="free"></ul>
+    </div>
+    <div class="fm-row">
+      <p class="fm-label"><span class="fm-tag fm-free">Level 1 free</span><span class="fm-tag fm-pass">Pass</span>6 puzzle games, every level after that</p>
+      <ul class="fm-icons" data-fm="puzzle"></ul>
+    </div>
+  </div>
+  <p class="pass-lead">The Pass also opens the new levels that arrive each month. Only one of you needs it. There are no ads, free or paid.</p>
   <ul class="plans">
-    <li><span class="name">Yearly</span><span class="price">$24.99</span><span class="note">a year, 7-day free trial</span></li>
-    <li><span class="name">Monthly</span><span class="price">$4.99</span><span class="note">a month</span></li>
-    <li><span class="name">Lifetime</span><span class="price">$49.99</span><span class="note">paid once</span></li>
+    <li class="plan plan-best"><span class="plan-tag">7 days free</span><span class="plan-name">Yearly</span><span class="plan-price">$24.99</span><span class="plan-note">a year</span></li>
+    <li class="plan"><span class="plan-name">Monthly</span><span class="plan-price">$4.99</span><span class="plan-note">a month</span></li>
+    <li class="plan"><span class="plan-name">Lifetime</span><span class="plan-price">$49.99</span><span class="plan-note">paid once</span></li>
   </ul>
   <p class="fine">These prices start when Two Thumbs launches on the App Store. In the TestFlight beta, every purchase is a test purchase that costs nothing. Prices are in US dollars, and the App Store shows your local price. Subscriptions renew until you cancel them in your Apple ID settings. Family Sharing works on all three plans. See the <a href="terms.html">terms of use</a> and <a href="privacy.html">privacy policy</a>.</p>
 </section>
 
 <section class="faq" aria-labelledby="faq-title">
-  <h2 id="faq-title" class="section-title">Questions before you play</h2>
+  <h2 id="faq-title" class="display">Questions before you play</h2>
   <details>
     <summary>How do we join the beta?</summary>
     <p>Open the <a href="https://testflight.apple.com/join/aw4fVYgR">beta link</a> on your iPhone. It takes you to TestFlight, Apple's app for testing new apps, where you install TestFlight and then tap Install on Two Thumbs.</p>
@@ -176,13 +269,20 @@
   </details>
 </section>
 
-<section class="close">
-  <h2 class="signoff">Lamps on. Game on.</h2>
+<section class="close" aria-labelledby="close-title">
+  <button class="pendant" type="button" data-lamp aria-pressed="false">
+    <span class="pendant-cord" aria-hidden="true"></span>
+    <svg class="pendant-shade" viewBox="0 0 120 90" aria-hidden="true"><path d="M14 70 Q60 -6 106 70 Z"/><circle class="lamp-bulb" cx="60" cy="74" r="13"/></svg>
+    <span class="pendant-pull" aria-hidden="true"></span>
+    <span class="sr-only" data-lamp-label>Switch to night</span>
+  </button>
+  <h2 id="close-title" class="close-title">Lamps on.<br>Game on.</h2>
   <p class="close-note">The beta is free. After launch, the classics, Mixed games and Bottle spin stay free, on one phone or two.</p>
-  <a class="button" href="https://testflight.apple.com/join/aw4fVYgR">Join the free beta</a>
+  <a class="btn btn-pink" href="https://testflight.apple.com/join/aw4fVYgR">Join the free beta</a>
 </section>
 </main>
-<footer>
+
+<footer class="foot">
   <nav aria-label="Legal">
     <a href="./">Home</a>
     <a href="privacy.html">Privacy</a>
@@ -191,6 +291,5 @@
   </nav>
   <p>© 2026 TrueStandard Labs LLC</p>
 </footer>
-</div>
 </body>
 </html>
