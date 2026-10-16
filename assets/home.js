@@ -243,6 +243,7 @@
   function show(html, { night = false } = {}) {
     $$(":scope > :not(.stage-pads):not(noscript)", stage).forEach((n) => n.remove());
     padsScene.hidden = true;
+    stage.classList.add("is-playing");
     stage.classList.toggle("is-night", night);
     const wrap = document.createElement("div");
     wrap.className = "scene-in";

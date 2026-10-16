@@ -192,6 +192,17 @@ ul { padding: 0; list-style: none; }
   transition: background-color .4s var(--ease-out);
 }
 .stage > * { grid-area: 1 / 1; }
+.stage { overflow: visible; }
+.stage > .stage-turn {
+  grid-area: auto; position: absolute; z-index: 5; top: -22px; left: 22px;
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 16px 4px 4px; border-radius: 999px;
+  background: var(--mango); color: var(--palm); border: 3px solid var(--line); box-shadow: 0 4px 0 var(--shadow);
+  font-weight: 800; font-size: 17px; transform: rotate(-4deg); white-space: nowrap;
+  animation: sticker-in .45s var(--ease-pop) .9s both;
+}
+.stage-turn .avatar { width: 30px; height: 30px; font-size: 16px; border-width: 2px; }
+.stage-turn .avatar + .avatar { margin-left: -12px; }
+.stage.is-playing > .stage-turn { display: none; }
 .stage.is-night { --surface: var(--palm); background: var(--palm); color: #fff; border-color: #fff; box-shadow: 0 10px 0 var(--night-shadow); }
 .scene-in { animation: scene-in .45s var(--ease-out) both; }
 @keyframes scene-in { from { opacity: 0; transform: translateY(14px) scale(.98); } }
