@@ -419,7 +419,7 @@
         <button class="btn btn-mango" type="button" data-rematch>Rematch</button>
         <button class="btn btn-ghost" type="button" data-share>Share the score</button>
       </div>
-      <a class="recap-link" href="https://testflight.apple.com/join/aw4fVYgR">The app has 15 games. Join the free beta →</a>
+      <a class="recap-link" href="https://apps.apple.com/app/two-thumbs-game-night/id6819222519">The app has 15 games. Get it on the App Store →</a>
     </div>`, { night: true });
     if (!tie) confetti(stage, 90);
     $("[data-rematch]", scene).addEventListener("click", () => { game = null; starting = true; startMatch(); });
